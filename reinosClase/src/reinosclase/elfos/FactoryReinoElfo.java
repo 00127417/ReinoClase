@@ -8,6 +8,7 @@ package reinosclase.elfos;
 import reinosclase.AbstractReino;
 import reinosclase.orco.orco;
 
+
 /**
  *
  * @author Oscar Lovato
@@ -17,8 +18,14 @@ public class FactoryReinoElfo implements AbstractReino{
     @Override
     public elfos getElfo(String type) {
         switch(type){
-            case ()
+            case "arquero":
+                return new arquero();
+            case "mago":
+                return new mago();
+            case "rey elfo":
+                return new ReyElfo();
         }
+        return null;
        }
 
     @Override
